@@ -22,6 +22,8 @@ services:
       - backend
     environment:
       - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - ./frontend:/app
     networks:
       - iris-net
 
